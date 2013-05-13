@@ -13,7 +13,7 @@ import views.html.*;
 public class Application extends Controller {
   
   public static Result index() {
-    return ok(index.render("Your new application is ready."));
+    return redirect("assets/index.html#/phones");
   }
 
    public static Result phones(String phoneId) throws IOException {
